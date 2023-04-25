@@ -2,12 +2,13 @@
 Python script for 'chopping up' DNA sequences/reads/regions into uniform-sized fragments. This is practically useful for oligo tiling designs that are often used in large scale oligo synthesis and assembly experiements. All sequences generated contain fixed overlap regions for homology cloning/contig assembly etc. 
 
 Author:
-Tushar Warrier, tw599@cam.ac.uk
+Tushar Warrier 
+tw599@cam.ac.uk
 https://github.com/tw599/fasta_chopper/issues
 
 Hardware/Software requirements:
-- x86-64 compatible processors
-- 64 bit Linux or Mac OS X
+x86-64 compatible processors
+64 bit Linux or Mac OS X
 
 MANUAL:
 
