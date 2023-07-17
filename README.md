@@ -19,19 +19,15 @@ Script for execution of script from terminal would be as follows:
 
 python fasta_chopper.py input.fasta output.fasta
 
-The current default length of chopped fragments is 220 bp with an overlap of 20 bp. The last chopped fragment for each record of the FASTA file (each DNA sequence) is returned as a 220-bp sequence which has a >20 bp overlap sequence.
-This only occurs in the event that:
+Now includes options to enter the following parameters:
 
-length of last chopped sequence/overhang < 220 bp (chopping length)
+- barcode_file can be included to add in a unique barcode sequence at the 5' end of each tiled oligo
+- site1, site2 : allow inclusion of unique primer sites for amplification and PCR purposes
+- --window_size parameter can now be specified for determining the length of the tiled oligos
+- --step_size parameter can now be specified to determine the overlap regions between sequentially 'chopped' oligos
 
+Mandatory Parameters:
 
-For editing chop length:
+- input.fasta and output.fasta are the only two mandatory requirements
 
-Edit lines 11 and 12 of fasta_chopper.py file:
-
-window_size = 220 # length of each sequence
-step_size = 200 # distance between the start positions of adjacent sequences
-
-NOTE: Subsequent versions will allow for entry of the window_size and step_size as user-determined parameters in the command-line/terminal.
-NOTE: Would recommend users to add a unique classifier to each DNA sequence (record) in their fasta file. This will allow for easier reading of the output DNA chunks.
 
