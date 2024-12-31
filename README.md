@@ -20,8 +20,11 @@ python fasta_chopper.py input.fasta output.fasta
 Now includes options to enter the following parameters:
 
 *barcode_file* can be included to add in a unique barcode sequence at the 5' end of each tiled oligo
+
 *site1, site2* : allow inclusion of unique primer sites for amplification and PCR purposes
+
 *--window_size* parameter can now be specified for determining the length of the tiled oligos
+
 *--step_size* parameter can now be specified to determine the overlap regions between sequentially 'chopped' oligos
 
 # Mandatory Parameters
